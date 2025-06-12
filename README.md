@@ -80,25 +80,24 @@ Individual accordions are completely independent of each other.
 
 Example:
 
-````css
+```css
 frissbee-accordion.part-styled::part(container-accordion) {
-        margin-bottom: 18px;
-        border: 3px solid #383838;
-        border-radius: 8px;
-      }
-      frissbee-accordion.part-styled::part(btn-title) {
-        font-family: 'Tahoma';
-        color: #383838;
-        background-color: #56ca65;
-        font-size: 24px;
-        padding: 4px 22px;
-        font-weight: bold;
-      }
-      frissbee-accordion.part-styled::part(container-panel) {
-        background-color: #e9fde7;
-      }
-      frissbee-accordion.part-styled::part(panel-accordion) {
-        padding: 22px 22px;
-      }
-      ```
-````
+  margin-bottom: 18px;
+  border: 3px solid #383838;
+  border-radius: 8px;
+}
+frissbee-accordion.part-styled::part(btn-title) {
+  font-family: 'Tahoma';
+  color: #383838;
+  background-color: #56ca65;
+  font-size: 24px;
+  padding: 4px 22px;
+  font-weight: bold;
+}
+frissbee-accordion.part-styled::part(container-panel) {
+  background-color: #e9fde7;
+}
+frissbee-accordion.part-styled::part(panel-accordion) {
+  padding: 22px 22px;
+}
+```
