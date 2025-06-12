@@ -81,12 +81,12 @@ Individual accordions are completely independent of each other.
 Example:
 
 ```css
-frissbee-accordion.part-styled::part(container-accordion) {
+frissbee-accordion::part(container-accordion) {
   margin-bottom: 18px;
   border: 3px solid #383838;
   border-radius: 8px;
 }
-frissbee-accordion.part-styled::part(btn-title) {
+frissbee-accordion::part(btn-title) {
   font-family: 'Tahoma';
   color: #383838;
   background-color: #56ca65;
@@ -94,10 +94,10 @@ frissbee-accordion.part-styled::part(btn-title) {
   padding: 4px 22px;
   font-weight: bold;
 }
-frissbee-accordion.part-styled::part(container-panel) {
+frissbee-accordion::part(container-panel) {
   background-color: #e9fde7;
 }
-frissbee-accordion.part-styled::part(panel-accordion) {
+frissbee-accordion::part(panel-accordion) {
   padding: 22px 22px;
 }
 ```
