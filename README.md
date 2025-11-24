@@ -23,8 +23,8 @@ Individual accordions are completely independent of each other.
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- implement the "frissbee-accordion_v.1.0.0.js" file => use "defer" -->
-    <script src="./assets/js/frissbee-accordion_v.1.0.0.js" defer></script>
+    <!-- implement the "frissbee-accordion_v.1.1.0.js" file => use "defer" -->
+    <script src="./assets/js/frissbee-accordion_v.1.1.0.js" defer></script>
   </head>
   <body>
     <!-- Implement the frissbee-accordion tag and set the title of the accordion with the "acc-title" attribute. -->
@@ -56,18 +56,53 @@ Individual accordions are completely independent of each other.
 
 ## Attributes
 
-- `acc-title` => Title of the accordion. **Default:** empty string
-- `color-title` => Color of the title text. **Default:** `#444`
-- `bg-title` => Background color of the Title. **Default:** `#f1f1f1'`
-- `bg-text` => Background color of the text within the `frissbee-accordion` HTML tag. **Default:** `#fff'`
-- `border-style` => Style of the border. **Default:** `1px solid #dedede`
-- `border-radius` => Radius of the border. **Default:** `0px`
-- `margin-bottom` => Bottom distance. **Default:** `0px`
-- `title-size` => Size of the title text. **Default:** `16px`
-- `title-font-family` => Font family of the title. **Default:** `Verdana, Geneva, Tahoma, sans-serif;`
-- `padding-acc` => Inside spacing of the text in the `frissbee-accordion` HTML tag. **Default:** `18px`
-- `is-title-bold` => Set the title to bold. **Default:** not set. No value necessary.
-- `is-active` => If this attribute is set, the accordion is open when the website is opened. **Default:** not set. No value necessary.
+- `acc-title`
+  - => Title of the accordion. **Default:** empty string
+- `color-title`
+  - => Color of the title text. **Default:** `#444`
+- `bg-title`
+  - => Background color of the Title. **Default:** `#f1f1f1'`
+- `bg-text`
+  - => Background color of the text within the `frissbee-accordion` HTML tag. **Default:** `#fff'`
+- `border-style`
+  - => Style of the border. **Default:** `1px solid #dedede`
+- `border-radius`
+  - => Radius of the border. **Default:** `0px`
+- `margin-bottom`
+  - => Bottom distance. **Default:** `0px`
+- `title-size`
+  - => Size of the title text. **Default:** `16px`
+- `title-font-family`
+  - => Font family of the title. **Default:** `Verdana, Geneva, Tahoma, sans-serif;`
+- `padding-acc`
+  - => Inside spacing of the text in the `frissbee-accordion` HTML tag. **Default:** `18px`
+- `is-title-bold`
+  - => Set the title to bold. **Default:** not set. No value necessary.
+- `is-active`
+  - => If this attribute is set, the accordion is open when the website is opened. **Default:** not set. No value necessary.
+
+## Functions
+
+The following functions are not necessary for integrating the Accordion into the website. However, if you integrate the Accordion into your own project, they can be used for this purpose.
+
+- `addIsActive()`
+  - => opens the accordion
+- `removeIsActive()`
+  - => closes the accordion
+- `addTitleIsBold()`
+  - => adds the `is-title-bold` attribute
+- `removeTitleIsBold()`
+  - => remove the `is-title-bold` attribute
+- `setTitle(title)`
+  - => sets the title of the accordion
+- `setText(text)`
+  - => sets the text of the accordion
+- `getScrollHeight()`
+  - => returns the height of the accordion when it is opened
+- `getMaxHeight()`
+  - => returns the height of the accordion when it is open
+- `setMaxHeight()`
+  - => sets the height of the accordion
 
 ## Style with CSS `::part()`
 
